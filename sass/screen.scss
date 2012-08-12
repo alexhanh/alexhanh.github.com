@@ -1,0 +1,45 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/typography/lists";
+
+ul.links {
+  @include horizontal-list(20px);
+  
+  display: inline-block;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.1;
+  color: #222;
+  margin: 0 0 20px;
+  font-weight: bold;
+  display: block;
+}
+
+body {
+  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+  font-weight: 300;
+  padding: 100px;
+}
+
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p, ul {
+  margin: 0 0 20px;
+}
+
+a {
+  color: #39C;
+  font-weight: 400;
+  text-decoration: none;
+}
