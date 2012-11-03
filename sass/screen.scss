@@ -3,43 +3,65 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass";
 @import "compass/reset";
 @import "compass/typography/lists";
 
-ul.links {
-  @include horizontal-list(20px);
-  
-  display: inline-block;
-}
-
-h1 {
-  font-size: 28px;
-  line-height: 1.1;
-  color: #222;
-  margin: 0 0 20px;
-  font-weight: bold;
-  display: block;
+p, ul {
+  margin: 0;
 }
 
 body {
-  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #777;
-  font-weight: 300;
+  font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 100px;
 }
 
 .wrapper {
-  width: 300px;
   margin: 0 auto;
   text-align: center;
 }
 
-p, ul {
-  margin: 0 0 20px;
+.card {
+  padding: 25px 50px;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
 }
 
-a {
-  color: #39C;
-  font-weight: 400;
-  text-decoration: none;
+h1.who {
+  line-height: 30px;
+  color: color-lightness(#F86960, 0.8);
+  font-size: 30px;
+  font-weight: 200;
+  color: #303231;
+}
+
+.what {
+  margin-top: 5px;
+  color: #888;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+ul.links {
+  @include horizontal-list(15px);
+  display: inline-block;
+  
+  a {
+    color: #777;
+    text-decoration: none;
+
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover {
+      color: #F86960;
+    }
+  }
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
 }
