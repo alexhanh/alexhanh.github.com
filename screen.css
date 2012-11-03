@@ -75,16 +75,17 @@ p, ul {
 /* line 14, sass/screen.scss */
 body {
   font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   padding: 100px;
 }
 
-/* line 19, sass/screen.scss */
+/* line 20, sass/screen.scss */
 .wrapper {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 24, sass/screen.scss */
+/* line 25, sass/screen.scss */
 .card {
   padding: 25px 50px;
   background-color: white;
@@ -92,7 +93,7 @@ body {
   display: inline-block;
 }
 
-/* line 31, sass/screen.scss */
+/* line 32, sass/screen.scss */
 h1.who {
   line-height: 30px;
   color: color-lightness(#f86960, 0.8);
@@ -101,15 +102,15 @@ h1.who {
   color: #303231;
 }
 
-/* line 39, sass/screen.scss */
+/* line 40, sass/screen.scss */
 .what {
   margin-top: 5px;
   color: #888;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 300;
 }
 
-/* line 46, sass/screen.scss */
+/* line 47, sass/screen.scss */
 ul.links {
   margin: 0;
   padding: 0;
@@ -141,7 +142,7 @@ ul.links li:last-child {
 ul.links li.last {
   padding-right: 0;
 }
-/* line 50, sass/screen.scss */
+/* line 51, sass/screen.scss */
 ul.links a {
   color: #777;
   text-decoration: none;
@@ -150,12 +151,12 @@ ul.links a {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 56, sass/screen.scss */
+/* line 57, sass/screen.scss */
 ul.links a:hover {
   color: #F86960;
 }
 
-/* line 62, sass/screen.scss */
+/* line 63, sass/screen.scss */
 hr {
   margin: 10px 0;
   border: 0;

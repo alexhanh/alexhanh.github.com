@@ -13,6 +13,7 @@ p, ul {
 
 body {
   font: 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   padding: 100px;
 }
 
@@ -39,7 +40,7 @@ h1.who {
 .what {
   margin-top: 5px;
   color: #888;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 300;
 }
 
